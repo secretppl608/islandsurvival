@@ -12,6 +12,7 @@ import Svg, { G, Path } from "react-native-svg";
 import "@/global.css";
 import Animated, { useSharedValue, withSpring } from "react-native-reanimated";
 
+
 export default function HomeScreen() {
   const [showTips, setShowTips] = useState(true);
   const backgroundColor = useSharedValue("white");
@@ -36,6 +37,12 @@ export default function HomeScreen() {
       });
     }, 5000);
   }, []);
+
+  useEffect(()=>{
+    if(showTips === false) {
+      
+    }
+  },[showTips])
   return (
     <>
       {showTips ? (
@@ -275,6 +282,7 @@ export default function HomeScreen() {
           >
             <View style={styles.titleContainer}>
               <Text style={styles.title}>纯净海岛求生</Text>
+              <Text>宝宝我今天也好想你喵，你好久都没来找我玩了呢</Text>
             </View>
             <View style={styles.button}>
               <Pressable onPress={button_click}>
