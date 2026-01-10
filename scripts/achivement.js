@@ -13,7 +13,7 @@ const achievement = {
     },
     "be_quiet": {
         name: '嘘！',
-        description: '在噪声充斥遍地的年代，维持一份宁静是一件难能可贵的事'
+        description: '月黑风高的夜里，远处密林中有什么东西的一双眼睛在觊觎着你？'
     },
     "good_night": {
         name: '晚安好梦',
